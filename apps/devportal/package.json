@@ -29,6 +29,12 @@
     "configure-husky": "npx husky install && npx husky add .husky/pre-commit \"npx --no-install lint-staged\"",
     "analyze": "cross-env ANALYZE=true next build"
   },
+  "overrides": {
+    "@sitecore-search/ui": {
+      "@radix-ui/react-collection": "1.0.3",
+      "@radix-ui/react-use-callback-ref": "1.0.1"
+    }
+  },
   "dependencies": {
     "@remark-embedder/core": "^3.0.1",
     "@remark-embedder/transformer-oembed": "^3.0.0",
